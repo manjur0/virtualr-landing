@@ -19,7 +19,13 @@ const Navbar = () => {
           <ul className="hidden lg:flex ml-14 space-x-12 ">
             {navItems.map((item, index) => (
               <li key={index}>
-                <a href={item.href}> {item.label}</a>
+                <a
+                  href={item.href}
+                  className="hover:bg-gradient-to-r from-orange-500 to-orange-800 hover:text-transparent bg-clip-text hover:transition duration-200"
+                >
+                  {" "}
+                  {item.label}
+                </a>
               </li>
             ))}
           </ul>
